@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diary</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://rawgithub.com/krzysztofbialek/Rails-Girls-Warsaw-App/master/style.css" />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>My Rails Girls Diary</h1>
+
+        <%= yield %>
+
+      <img src="http://railsgirls.com/images/rg-warsaw.png" />
+
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<% if flash[:success] %>
+   <div class="success"><%= flash[:success] %></div>
+ <% end %>
+<h2><%= @entry.title %></h2>
+  <p><%= @entry.date %></p>
+  <p><%= @entry.contents %></p>
+  <p><%= link_to("Back to all entries", entries_path) %></p>
+  <p><%= link_to("Edit this entry", edit_entry_path(@entry)) %></p>
